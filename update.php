@@ -33,10 +33,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Se a senha foi fornecida, criptografa antes de atualizar
     if (!empty($password)) {
         $password = password_hash($password, PASSWORD_DEFAULT);
-        // Atualiza a senha no banco de dados
+        // Atualiza a senha no banco de dados, junto com o nome e email
         $sql = "UPDATE usuarios SET nome=?, email=?, password=? WHERE id=?";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("sssi", $nome, $email, $password, $id); // Bind de parâmetros
+        $stmt->bind_param("sssi", $nome, $email, $password, $id); // Bind de parâmetros com a senha
     } else {
         // Se a senha não foi fornecida, não altere o campo de senha
         $sql = "UPDATE usuarios SET nome=?, email=? WHERE id=?";
