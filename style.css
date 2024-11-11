@@ -7,33 +7,33 @@
 }
 
 body {
-    background-color: #1a1a1a; /* Cinza escuro */
-    color: #8a2be2; /* Roxo */
+    background-color: #1a1a1a;
+    color: #8a2be2;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 4;
 }
 
 h1 {
     text-align: center;
     padding: 20px;
-    font-size: 2.5em;
-    margin-bottom: 20px; 
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 h2 {
-    color: #8a2be2; 
-    font-size: 2em;
+    color: #8a2be2;
+    font-size: 2.2em;
     margin-top: 20px;
 }
 
 form {
-    background-color: #333; 
-    color: #fff; 
+    background-color: #333;
+    color: #fff;
     margin: 0 auto;
     padding: 30px;
-    width: 80%;
-    max-width: 80px; 
+    width: 90%;
+    max-width: 600px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -45,39 +45,39 @@ label {
 }
 
 input[type="text"], input[type="email"] {
-    width: 50%; 
-    padding: 10px; 
+    width: 100%;
+    padding: 10px;
     margin-bottom: 20px;
-    border: 2px solid #8a2be2; /* Borda roxa */
+    border: 2px solid #8a2be2;
     border-radius: 5px;
-    background-color: #222; /* Fundo escuro para os inputs */
-    color: #fff; /* Texto branco */
+    background-color: #222;
+    color: #fff;
     font-size: 1em;
     display: block;
-    margin-left: auto; 
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
+}
 
 input[type="submit"] {
-    background-color: #8a2be2; /* Roxo */
+    background-color: #8a2be2;
     color: white;
     border: none;
     padding: 15px;
-    width: 80%;
+    width: 100%;
     border-radius: 5px;
     font-size: 1.1em;
     cursor: pointer;
-    box-sizing: border-box; 
-    min-height: 50px; 
+    box-sizing: border-box;
+    min-height: 50px;
 }
 
-/* Efeito de hover para o botão */
 input[type="submit"]:hover {
-    background-color: #5a1f91; /* Tom de roxo mais escuro */
+    background-color: #5a1f91;
 }
 
 input[type="submit"]:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(138, 43, 226, 0.8); /* Roxo suave */
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.8);
 }
 
 hr {
